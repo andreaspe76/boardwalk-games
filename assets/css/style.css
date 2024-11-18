@@ -5,16 +5,11 @@
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620;
-    /* dark brown */
-    --secondary-color: #aa9581;
-    /* light brown */
-    --highlight-color: #416a8e;
-    /* blue */
-    --highlight-color-light: #7a9fc2;
-    /* light blue */
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
-
 
 /* Global styles */
 
@@ -43,28 +38,28 @@ h2 {
 }
 
 .section {
-   margin-top: 2rem;
-   margin-bottom: 2rem; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
+/* Navbar */
 
-/*Navbar styles*/
 #navbar {
     background-color: var(--primary-color);
-
 }
 
 #navbar .logo {
     width: 30px;
 }
 
+/* Header */
 
-/*Header*/
 #header .lead {
     font-family: var(--secondary-font);
 }
 
-/*Services*/
+/* Services */
+
 #services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
@@ -75,10 +70,17 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
 
 /* grid visualisation CSS for testing */
 
-/*.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
@@ -88,37 +90,36 @@ h2 {
     background-color: lightgray;
 } */
 
+/* Media queries */
 
-/*Media queries */
-
-/*Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-   /*Make all service cards the same height*/
+    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
     }
 }
 
-/*Large devices (small laptops, 992px and up)*/
+/* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-    /*Make all service cards the same height*/
-     #services .card-body {
-         min-height: auto;
-     }
- }
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto;
+    }
+}
 
- /*XL devices (1200px and up)*/
+/* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    /*Make all service cards the same height*/
-     #services .card-body {
-         min-height: 220px;
-     }
- }
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
 
-  /*XXL devices (1400px and up)*/
+/* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-    /*Make all service cards the same height*/
-     #services .card-body {
-         min-height: 195px;
-     }
- }
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
+    }
+}
